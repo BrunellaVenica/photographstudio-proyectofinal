@@ -20,11 +20,12 @@ $direccion-secundaria: row;
 
 //mapas
 $fuentes: (
-    primaria: 60px,
-    secundario: 50px,
-    terciaria: 40px,
-    normal: 30px,
-    cuerpo: 20px
+    primaria: 6rem,
+    secundario: 5rem,
+    terciaria: 4rem,
+    normal: 3rem,
+    cuerpo: 2rem,
+    formato: 1rem,
 );
 
 @each $llave, $valor in $fuentes {

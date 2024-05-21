@@ -8,14 +8,14 @@ header {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    font-size: map-get($fuentes, 40px);
+    font-size: map-get($fuentes, 4rem);
     @include margenes (none, 5px, none, none, 30px);
 }
 
 .navigation-container img {
     display: flex;
     color: $color-principal;
-    width: 500px;
+    width: 100%;
     margin-left: 10px;
 }
 
@@ -30,7 +30,7 @@ header {
     list-style: $decoracion;
     text-decoration: $decoracion;
     flex-direction: $direccion-secundaria;
-    font-size: map-get($fuentes, 50px);
+    font-size: map-get($fuentes, 5rem);
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ header {
     color: $color-principal;
     text-decoration: $decoracion;
     list-style: $decoracion;
-    font-size: map-get($fuentes, 50px);
+    font-size: map-get($fuentes, 5rem);
     width: fit-content;
     display: flex;
     justify-content: end;
@@ -79,7 +79,7 @@ header {
     color: $color-principal;
     text-decoration: $decoracion;
     @include margenes (40px, none, none, none, none);
-    font-size: map-get($fuentes, 50px);
+    font-size: map-get($fuentes, 5rem);
 }
 
 h1 {
@@ -87,7 +87,7 @@ h1 {
     font-family: $titulo-principal;
     color: $color-secundario;
     font-style: italic;
-    font-size: map-get($fuentes, 50px);
+    font-size: map-get($fuentes, 5rem);
     @include margenes (40px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;
@@ -98,7 +98,7 @@ h2 {
     font-family: $cuerpo;
     color: $color-secundario;
     font-style: normal;
-    font-size: map-get($fuentes, 40px);
+    font-size: map-get($fuentes, 4rem);
     @include margenes (10px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;

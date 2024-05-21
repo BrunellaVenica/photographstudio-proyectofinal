@@ -33,13 +33,13 @@ main {
 }
 
 .presentacion {
-    @include espacios (2950px, 700px);
+    @include espacios (70rem, 50rem);
     @include presentacion;
     background-color: $color-fondo;
 }
 
 .presentacion .img {
-    width: 50%;
+    width: 25%;
     align-content: $posicion;
 }
 
