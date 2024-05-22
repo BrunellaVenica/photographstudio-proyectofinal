@@ -20,8 +20,8 @@ header {
 }
 
 .scale-up-left {
-	-webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 
@@ -40,16 +40,18 @@ header {
     justify-content: space-between;
 }
 
-.navigation-container .nav-bar li a {
-    color: $color-principal;
-    text-decoration: $decoracion;
-    list-style: $decoracion;
-    font-size: map-get($fuentes, 50px);
-    width: fit-content;
-    display: flex;
-    justify-content: end;
-    @include margenes (5px, none, 15px, 25px, none);
-}
+.navigation-container {
+    .nav-bar {
+        li {
+            a {
+                color: $color-principal;
+                text-decoration: $decoracion;
+                list-style: $decoracion;
+                font-size: map-get($fuentes, 50px);
+                width: fit-content;
+                display: flex;
+                justify-content: end;
+                @include margenes (5px, none, 15px, 25px, none);
 
                 &:hover {
                     background-color: $color-secundario;
@@ -59,6 +61,7 @@ header {
         }
     }
 }
+
 
 .scale-up-left {
     -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -82,31 +85,33 @@ header {
         color: $color-principal;
         text-decoration: $decoracion;
 
-.logotype a i {
-    color: $color-principal;
-    text-decoration: $decoracion;
-    @include margenes (40px, none, none, none, none);
-    font-size: map-get($fuentes, 50px);
-}
+        .logotype a i {
+            color: $color-principal;
+            text-decoration: $decoracion;
+            @include margenes (40px, none, none, none, none);
+            font-size: map-get($fuentes, 50px);
+        }
 
-h1 {
-    display: flex;
-    font-family: $titulo-principal;
-    color: $color-secundario;
-    font-style: italic;
-    font-size: map-get($fuentes, 5rem);
-    @include margenes (40px, none, none, none, none);
-    align-content: $posicion;
-    justify-content: $posicion;
-}
+        h1 {
+            display: flex;
+            font-family: $titulo-principal;
+            color: $color-secundario;
+            font-style: italic;
+            font-size: map-get($fuentes, 5rem);
+            @include margenes (40px, none, none, none, none);
+            align-content: $posicion;
+            justify-content: $posicion;
+        }
 
-h2 {
-    display: flex;
-    font-family: $cuerpo;
-    color: $color-secundario;
-    font-style: normal;
-    font-size: map-get($fuentes, 4rem);
-    @include margenes (10px, none, none, none, none);
-    align-content: $posicion;
-    justify-content: $posicion;
+        h2 {
+            display: flex;
+            font-family: $cuerpo;
+            color: $color-secundario;
+            font-style: normal;
+            font-size: map-get($fuentes, 4rem);
+            @include margenes (10px, none, none, none, none);
+            align-content: $posicion;
+            justify-content: $posicion;
+        }
+    }
 }
