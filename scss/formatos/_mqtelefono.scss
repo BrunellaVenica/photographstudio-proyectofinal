@@ -344,55 +344,47 @@
 
     .bar-principal {
         flex-direction: $direccion-principal;
+    }
 
-        select {
-            font-size: 1rem;
-            margin-left: 1.5rem;
-        }
+    .bar-principal select {
+        font-size: map-get($fuentes, 20px);
+        @include margenes (15px, none, -3px, none, none);
+    }
 
-        form {
-            font-size: 1rem;
-            margin-left: 1.6rem;
+    .bar-principal form {
+        @include margenes (5px, none, 0px, none, none);
+    }
 
-            p {
-                input {
-                    @include margenes (0.5rem, none, 7rem, none, none);
-                    margin-left: 1.6rem;
-                    @include espacios (20rem, none);
-                }
-            }
-        }
+    .bar-principal form p input {
+        @include espacios (385px, none);
+        @include margenes (5px, none, 5px, none, none);
     }
 
     .card {
-        @include margenes (15px, 15px, 15px, 15px, 15px);
-        @include espacios (20rem, 50rem);
+        @include espacios (350px, 650px);
+        @include margenes (15px, 15px, 15px, 15px, none);
     }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
+
     }
 
-    .card-body {
-        p {
-            font-size: map-get($fuentes, 2rem);
-        }
+    .card-body p {
+        font-size: map-get($fuentes, 20px);
     }
 
     .card img {
-        @include espacios (18rem, 12.5rem);
+        @include espacios (350px, 200px);
     }
 
     /*contacto*/
     .contacto-container {
-        @include espacios (100%, 100%);
-        @include margenes (none, none, -40rem, none, 0.5rem);
+        @include margenes (none, none, 0px, none, none);
+    }
 
-        .subtitulo {
-            font-size: 1.5rem;
-            width: 15rem;
-            margin-left: 41.5rem;
-        }
+    .contacto-container .subtitulo {
+        font-size: map-get($fuentes, 30px);
     }
 
     .form-container {
@@ -409,21 +401,26 @@
     }
 
     .write {
-        @include espacios (21rem, auto);
-        @include margenes (none, none, 41.5rem, none, none);
-
-
-        iframe {
-            @include espacios (15rem, none);
-        }
+        @include espacios (370px, none);
     }
 
-    .subtitulo {
-        h2 {
-            font-size: 1.5rem;
-            width: 15rem;
-            margin-left: 41.5rem;
-        }
+    .write p {
+        font-size: map-get($fuentes, 20px);
+    }
+
+
+    .write iframe {
+        @include espacios (300px, 200px);
+    }
+
+
+    .subtitulo h2 {
+        font-size: map-get($fuentes, 20px);
+    }
+
+    .col-lg-12 button {
+        font-size: map-get($fuentes, 20px);
+        @include espacios (100px, 50px);
     }
 
     .img-container {

@@ -8,14 +8,14 @@ header {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    font-size: map-get($fuentes, 4rem);
+    font-size: map-get($fuentes, 40px);
     @include margenes (none, 5px, none, none, 30px);
 }
 
 .navigation-container img {
     display: flex;
     color: $color-principal;
-    width: 100%;
+    width: 500px;
     margin-left: 10px;
 }
 
@@ -30,7 +30,7 @@ header {
     list-style: $decoracion;
     text-decoration: $decoracion;
     flex-direction: $direccion-secundaria;
-    font-size: map-get($fuentes, 5rem);
+    font-size: map-get($fuentes, 50px);
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -44,16 +44,25 @@ header {
     color: $color-principal;
     text-decoration: $decoracion;
     list-style: $decoracion;
-    font-size: map-get($fuentes, 5rem);
+    font-size: map-get($fuentes, 50px);
     width: fit-content;
     display: flex;
     justify-content: end;
     @include margenes (5px, none, 15px, 25px, none);
 }
 
-.navigation-container .nav-bar li a:hover {
-    background-color: $color-secundario;
-    color: $color-hover;
+                &:hover {
+                    background-color: $color-secundario;
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+}
+
+.scale-up-left {
+    -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .logotype {
@@ -64,22 +73,20 @@ header {
     background-image: url(../images/background-image2.png);
     background-size: cover;
     background-position: $posicion;
-}
 
-.logotype img {
-    @include espacios (250px, none);
-}
+    img {
+        @include espacios (250px, none);
+    }
 
-.logotype a {
-    color: $color-principal;
-    text-decoration: $decoracion;
-}
+    a {
+        color: $color-principal;
+        text-decoration: $decoracion;
 
 .logotype a i {
     color: $color-principal;
     text-decoration: $decoracion;
     @include margenes (40px, none, none, none, none);
-    font-size: map-get($fuentes, 5rem);
+    font-size: map-get($fuentes, 50px);
 }
 
 h1 {
