@@ -124,7 +124,7 @@
                 }
             }
         }
-    }
+    
 
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
@@ -500,4 +500,3 @@
             font-size: map-get($fuentes, 3rem);
         }
     }
-}
