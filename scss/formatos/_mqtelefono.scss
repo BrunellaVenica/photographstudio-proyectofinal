@@ -344,47 +344,56 @@
 
     .bar-principal {
         flex-direction: $direccion-principal;
+
+        select {
+            font-size: 1rem;
+            margin-left: 1.5rem;
+        }
+
+        form {
+            font-size: 1rem;
+            margin-left: 1.6rem;
+
+            p {
+                input {
+                    @include margenes (0.5rem, none, 7rem, none, none);
+                    margin-left: 1.6rem;
+                    @include espacios (20rem, none);
+                }
+            }
+        }
     }
 
-    .bar-principal select {
-        font-size: map-get($fuentes, 20px);
-        @include margenes (15px, none, -3px, none, none);
-    }
-
-    .bar-principal form {
-        @include margenes (5px, none, 0px, none, none);
-    }
-
-    .bar-principal form p input {
-        @include espacios (385px, none);
-        @include margenes (5px, none, 5px, none, none);
-    }
-
-    .card {
-        @include espacios (350px, 650px);
-        @include margenes (15px, 15px, 15px, 15px, none);
-    }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
 
-    }
+        .card {
+            @include margenes (1.5rem, 1.5rem, none, none, 1rem);
+            @include espacios (22rem, auto);
 
-    .card-body p {
-        font-size: map-get($fuentes, 20px);
-    }
+            img {
+                @include espacios (20rem, 14rem);
+            }
 
-    .card img {
-        @include espacios (350px, 200px);
+            .card-body {
+                p {
+                    font-size: map-get($fuentes, 2rem);
+                }
+            }
+        }
+
     }
 
     /*contacto*/
     .contacto-container {
-        @include margenes (none, none, 0px, none, none);
-    }
-
-    .contacto-container .subtitulo {
-        font-size: map-get($fuentes, 30px);
+        @include espacios (100%, 100%);
+        @include margenes (none, none, -40rem, none, 0.5rem);
+        .subtitulo {
+            font-size: 1.5rem;
+            margin-left: 42rem;
+            width: 15rem;
+        }
     }
 
     .form-container {
@@ -401,13 +410,22 @@
     }
 
     .write {
-        @include espacios (370px, none);
+        @include espacios (21rem, auto);
+        @include margenes (none, none, 41.5rem, none, none);
+        iframe {
+            @include espacios (15rem, none);
+        }
     }
 
-    .write p {
-        font-size: map-get($fuentes, 20px);
+    .subtitulo {
+        h2 {
+            font-size: 1.5rem;
+            margin-left: 42rem;
+            width: 15rem;
+        }
     }
 
+<<<<<<< HEAD
 
     .write iframe {
         @include espacios (300px, 200px);
@@ -423,6 +441,8 @@
         @include espacios (100px, 50px);
     }
 
+=======
+>>>>>>> sass
     .img-container {
         .img {
             img {

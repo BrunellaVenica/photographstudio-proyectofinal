@@ -8,20 +8,53 @@ header {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    font-size: map-get($fuentes, 40px);
-    @include margenes (none, 5px, none, none, 30px);
-}
+    font-size: map-get($fuentes, 4rem);
+    @include margenes (none, 5px, none, none, 10px);
 
-.navigation-container img {
-    display: flex;
-    color: $color-principal;
-    width: 500px;
-    margin-left: 10px;
+    img {
+        display: flex;
+        color: $color-principal;
+        @include espacios (25rem, 3rem);
+        @include margenes (0.5rem, none, 2rem, none, none);
+    }
+
+    .nav-bar {
+        display: flex;
+        list-style: $decoracion;
+        text-decoration: $decoracion;
+        flex-direction: $direccion-secundaria;
+        font-size: map-get($fuentes, 5rem);
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li {
+            a {
+                justify-content: space-between;
+                color: $color-principal;
+                text-decoration: $decoracion;
+                list-style: $decoracion;
+                font-size: map-get($fuentes, 5rem);
+                width: fit-content;
+                display: flex;
+                justify-content: end;
+                @include margenes (5px, none, 15px, 25px, 10px);
+                border-radius: 30px;
+
+                &:hover {
+                    background-color: $color-secundario;
+                    color: $color-hover;
+                }
+            }
+        }
+    }
 }
 
 .scale-up-left {
     -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+<<<<<<< HEAD
 }
 
 
@@ -66,6 +99,8 @@ header {
 .scale-up-left {
     -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+=======
+>>>>>>> sass
 }
 
 .logotype {
@@ -85,6 +120,7 @@ header {
         color: $color-principal;
         text-decoration: $decoracion;
 
+<<<<<<< HEAD
         .logotype a i {
             color: $color-principal;
             text-decoration: $decoracion;
@@ -114,4 +150,35 @@ header {
             justify-content: $posicion;
         }
     }
+=======
+        i {
+            color: $color-principal;
+            text-decoration: $decoracion;
+            @include margenes (40px, none, none, none, none);
+            font-size: map-get($fuentes, 5rem);
+        }
+    }
+}
+
+h1 {
+    display: flex;
+    font-family: $titulo-principal;
+    color: $color-secundario;
+    font-style: italic;
+    font-size: map-get($fuentes, 5rem);
+    @include margenes (40px, none, none, none, none);
+    align-content: $posicion;
+    justify-content: $posicion;
+}
+
+h2 {
+    display: flex;
+    font-family: $cuerpo;
+    color: $color-secundario;
+    font-style: normal;
+    font-size: map-get($fuentes, 4rem);
+    @include margenes (10px, none, none, none, none);
+    align-content: $posicion;
+    justify-content: $posicion;
+>>>>>>> sass
 }

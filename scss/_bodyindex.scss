@@ -28,22 +28,20 @@ main {
 }
 
 .presentacion {
-    @include espacios (2950px, 700px);
+    @include espacios (72rem, 40rem);
     @include presentacion;
     background-color: $color-fondo;
-}
-
-.presentacion .img {
-    width: 50%;
-    align-content: $posicion;
-}
-
-.presentacion .img img {
-    vertical-align: top;
-    border-radius: 5px;
-    @include espacios (1200px, 600px);
-    @include margenes (15px, 15px, 200px, 15px, 15px);
-    border: $color-principal 2px solid;
+    .img {
+        width: 50%;
+        align-content: $posicion;
+        img {
+            vertical-align: top;
+            border-radius: 5px;
+            @include espacios (33rem, 23rem);
+            @include margenes (5.5rem, 1.5rem, 2rem, 1.5rem, 0.5rem);
+            border: $color-principal 2px solid;
+        }
+    }
 }
 
 .producto-info {

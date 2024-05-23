@@ -216,8 +216,8 @@ main {
 }
 
 .presentacion {
-  width: 2950px;
-  height: 700px;
+  width: 72rem;
+  height: 40rem;
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
@@ -227,22 +227,20 @@ main {
   box-sizing: border-box;
   background-color: #C2BAAD;
 }
-
 .presentacion .img {
   width: 50%;
   align-content: center;
 }
-
 .presentacion .img img {
   vertical-align: top;
   border-radius: 5px;
-  width: 1200px;
-  height: 600px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 200px;
-  margin-right: 15px;
-  padding: 15px;
+  width: 33rem;
+  height: 23rem;
+  margin-top: 5.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  padding: 0.5rem;
   border: #f5fffa 2px solid;
 }
 
