@@ -127,7 +127,6 @@
         }
     }
 
-<<<<<<< HEAD
     .presentacion .img {
         @include espacios (50%, none); 
     }
@@ -168,8 +167,6 @@
         }
     
 
-=======
->>>>>>> sass
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 25rem;
@@ -544,4 +541,3 @@
             font-size: map-get($fuentes, 3rem);
         }
     }
-}
