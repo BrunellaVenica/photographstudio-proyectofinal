@@ -425,7 +425,6 @@
         }
     }
 
-<<<<<<< HEAD
 
     .write iframe {
         @include espacios (300px, 200px);
@@ -440,9 +439,6 @@
         font-size: map-get($fuentes, 20px);
         @include espacios (100px, 50px);
     }
-
-=======
->>>>>>> sass
     .img-container {
         .img {
             img {

@@ -117,7 +117,6 @@ header {
         color: $color-principal;
         text-decoration: $decoracion;
 
-
         .logotype a i {
             color: $color-principal;
             text-decoration: $decoracion;
@@ -176,4 +175,33 @@ h2 {
     @include margenes (10px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;
-}
+
+        .logotype a i {
+            color: $color-principal;
+            text-decoration: $decoracion;
+            @include margenes (40px, none, none, none, none);
+            font-size: map-get($fuentes, 50px);
+        }
+
+        h1 {
+            display: flex;
+            font-family: $titulo-principal;
+            color: $color-secundario;
+            font-style: italic;
+            font-size: map-get($fuentes, 5rem);
+            @include margenes (40px, none, none, none, none);
+            align-content: $posicion;
+            justify-content: $posicion;
+        }
+
+        h2 {
+            display: flex;
+            font-family: $cuerpo;
+            color: $color-secundario;
+            font-style: normal;
+            font-size: map-get($fuentes, 4rem);
+            @include margenes (10px, none, none, none, none);
+            align-content: $posicion;
+            justify-content: $posicion;
+        }
+    }

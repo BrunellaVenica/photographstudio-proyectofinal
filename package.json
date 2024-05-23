@@ -1,4 +1,5 @@
 {
+
   "name": "mi-proyecto",
   "version": "1.0.0",
   "description": "Consta de una representacion grafica e informativa de los trabajos realizados a lo largo de los años en diferentes escenarios.",
@@ -11,3 +12,4 @@
   "watch-css": "sass --watch scss/main.scss css/main.css"
 
 }
+
