@@ -8,38 +8,44 @@ footer {
     align-items: $posicion;
     justify-content: $posicion;
     flex-direction: $direccion-principal;
-    background-image: linear-gradient(to top, rgb(134, 119, 96), $color-fondo);
 }
 
-.network-links p {
-    display: flex;
-    flex-direction: $direccion-principal;
-    color: $color-principal;
-    text-decoration: $decoracion;
-    list-style: $decoracion;
-    align-items: $posicion;
-    font-size: map-get($fuentes, 50px);
-    @include margenes (120px, none, none, none, none);
+.network-links {
+    p {
+        display: flex;
+        flex-direction: $direccion-principal;
+        color: $color-principal;
+        text-decoration: $decoracion;
+        list-style: $decoracion;
+        align-items: $posicion;
+        font-size: 1.5rem;
+        @include margenes (120px, none, none, none, none);
+    }
+
+    a {
+        display: inline-block;
+        color: $color-principal;
+        text-decoration: $decoracion;
+        list-style: $decoracion;
+        align-items: $posicion;
+        @include margenes (60px, none, none, none, none);
+
+        i {
+            display: flex;
+            float: left;
+            justify-content: $posicion;
+            align-items: $posicion;
+            align-content: $posicion;
+            @include margenes (none, none, 40px, 55px, none);
+
+            &:hover {
+                background-color: none;
+                color: $color-hover;
+            }
+        }
+    }
 }
 
-.network-links a {
-    display: inline-block;
-    color: $color-principal;
-    text-decoration: $decoracion;
-    list-style: $decoracion;
-    align-items: $posicion;
-    @include margenes (60px, none, none, none, none);
-}
-
-.network-links a i {
-    display: flex;
-    float: left;
-    font-size: map-get($fuentes, 60px);
-    justify-content: $posicion;
-    align-items: $posicion;
-    align-content: $posicion;
-    @include margenes (none, none, 40px, 55px, none);
-}
 
 .fa-brands .fa-linkedin-in {
     justify-content: $posicion;
@@ -50,34 +56,41 @@ footer {
     display: flex;
     flex-direction: $direccion-principal;
     @include margenes (20px, none, none, none, none);
-    font-size: map-get($fuentes, 60px);
+
+    img {
+        background-color: none;
+        display: flex;
+        justify-content: $posicion;
+        flex-direction: $direccion-principal;
+        align-items: $posicion;
+        @include margenes (30px, none, none, none, none);
+        @include espacios (15rem, none);
+    }
+
+    ul {
+        li {
+            list-style: $decoracion;
+            @include margenes (3rem, none, none, none, none);
+
+            a {
+                color: $color-principal;
+                text-decoration: $decoracion;
+                font-size: 2rem;
+
+                &:hover {
+                    background-color: none;
+                    color: $color-hover;
+                }
+            }
+        }
+    }
 }
 
-.navigation-end img {
-    background-color: none;
-    display: flex;
-    justify-content: $posicion;
-    flex-direction: $direccion-principal;
-    align-items: $posicion;
-    @include margenes (30px, none, none, none, none);
-    @include espacios (300px, none);
-}
-
-.navigation-end li {
-    list-style: $decoracion;
-    @include margenes (50px, none, none, none, none);
-}
-
-.navigation-end li a {
-    color: $color-principal;
-    text-decoration: $decoracion;
-    font-size: map-get($fuentes, 50px);
-}
-
-.copyright p {
-    display: flex;
-    color: $color-principal;
-    @include margenes (160px, none, none, none, none);
-    font-size: map-get($fuentes, 50px);
-
+.copyright {
+    p {
+        display: flex;
+        color: $color-principal;
+        @include margenes (160px, none, none, none, none);
+        font-size: 1.5rem;
+    }
 }

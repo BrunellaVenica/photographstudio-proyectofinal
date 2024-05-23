@@ -11,54 +11,56 @@
 
 @mixin btn-interactive {
     display: flex;
-    font-size: 50px;
+    font-size: 2rem;
     font-style: italic;
     align-items: flex-end;
     background-size: 100%;
-    width: 900px;
-    height: 400px;
+    width: 23rem;
+    height: 12rem;
     margin: 15px;
-    padding: 15px;
+    padding: 5px;
     border: $color-principal 2px solid;
     float: left;
     transition: 0.5s;
-    margin-left: 50px;
 }
 
 @mixin decorative-img {
     float: left;
-    width: 900px;
-    height: 900px;
-    margin: 15px;
-    padding: 15px;
+    width: 19rem;
+    height: 25rem;
+    padding: 5px;
+    margin: 8px;
     border: #f5fffa 2px solid;
 }
 
 //servicios//
 @mixin secciones-texto {
     color:  #e4e4e4;
-    font-size: 80px;
+    font-size: 4rem;
     font-family: "Petrona", serif;
     font-style: italic;
+    padding: 20rem;
 }
 
 @mixin setting-img {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 450px;
+    padding: 0;
     margin-top: 10px;
     transition: 1s;
 }
 
-//servicios
 @mixin formato {
     border-radius: 60px;
     line-height: 25px;
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
     letter-spacing: 3px;
     font-style: normal;
     text-transform: uppercase;
     cursor: pointer;
+    
 }
 
 //galeria//
@@ -70,14 +72,14 @@
 @mixin formato-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1000px;
-    padding: 40px;
+    grid-auto-rows: auto;
+    padding: 25px;
     grid-gap: 20px;
 }
 
 @mixin animacion-img {
     background:#f0f0f0ea;
-    color:#79aab5;
+    color:#223336;
     transform: scale(1.2);
 }
 
