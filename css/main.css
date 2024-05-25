@@ -1000,7 +1000,7 @@ button:hover {
   align-items: end;
 }
 
-.write-container .write {
+.write {
   display: flex;
   flex-direction: column;
   clear: both;
@@ -1014,15 +1014,15 @@ button:hover {
   width: 50%;
   height: none;
 }
-.write-container .write iframe {
+.write iframe {
   width: 37rem;
   height: 40rem;
 }
-.write-container .write p {
+.write p {
   font-family: "Petrona", serif;
   color: #f5fffa;
 }
-.write-container .subtitulo h2 {
+.write .subtitulo h2 {
   font-family: "Petrona", serif;
   font-style: italic;
   display: inline-block;
