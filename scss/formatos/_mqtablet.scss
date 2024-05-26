@@ -127,46 +127,6 @@
         }
     }
 
-    .presentacion .img {
-        @include espacios (50%, none); 
-    }
-
-    .presentacion .img img {
-        border-radius: 0.5px;
-        border: $color-principal 1px solid;
-        @include margenes (0px, 95px, 10px, none, 5px); 
-        @include espacios (350px, 250px); 
-    }
-
-            .producto-info {
-                border-radius: 0px 7px 10px 7px;
-                background: none;
-                background-color: none;
-                @include espacios (50%, none);
-
-                .producto-texto {
-                    @include espacios (100%, 100%);
-
-                    h1 {
-                        font-size: 1rem;
-                        align-items: $posicion;
-                        @include margenes (none, none, 5px, none, 5px);
-                    }
-
-                    p {
-                        font-size: 0.80rem;
-                        @include margenes (10px, none, 10px, none, none);
-                        @include espacios (none, none);
-                    }
-                }
-
-                .precio-btn {
-                    display: none;
-                }
-            }
-        }
-    
-
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 22rem;
@@ -559,3 +519,4 @@
             font-size: map-get($fuentes, 3rem);
         }
     }
+}

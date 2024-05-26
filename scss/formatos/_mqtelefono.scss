@@ -443,20 +443,6 @@
         }
     }
 
-
-    .write iframe {
-        @include espacios (300px, 200px);
-    }
-
-
-    .subtitulo h2 {
-        font-size: map-get($fuentes, 20px);
-    }
-
-    .col-lg-12 button {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (100px, 50px);
-    }
     .img-container {
         .img {
             img {
