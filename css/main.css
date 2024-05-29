@@ -73,6 +73,7 @@ header {
   margin-left: none;
   margin-right: none;
   padding: 10px;
+  overflow: hidden;
 }
 .navigation-container img {
   display: flex;
