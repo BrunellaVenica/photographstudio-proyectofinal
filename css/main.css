@@ -425,7 +425,7 @@ button:hover {
 .services-options h5 {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Petrona", serif;
   letter-spacing: 3.5px;
   text-align: center;
@@ -526,32 +526,32 @@ button:hover {
 }
 .decorative-picture .service-one {
   float: left;
-  width: 23rem;
-  height: 23rem;
+  width: 19rem;
+  height: 25rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-two {
   float: left;
-  width: 23rem;
-  height: 23rem;
+  width: 19rem;
+  height: 25rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-three {
   float: left;
-  width: 23rem;
-  height: 23rem;
+  width: 19rem;
+  height: 25rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-four {
   float: left;
-  width: 23rem;
-  height: 23rem;
+  width: 19rem;
+  height: 25rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
